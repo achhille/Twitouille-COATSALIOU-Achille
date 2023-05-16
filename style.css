@@ -1,0 +1,138 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
+
+*{
+
+    font-family: 'alata', sans-serif;
+}
+
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: lightblue;
+}
+
+.header{
+    background-color: lightsalmon;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.headerLeft, .headerRight{
+    display: flex;
+    align-items: center;
+}
+
+.menu{
+    transition: ease-out 0.2s;
+    margin: 0 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    background: none;
+    cursor: pointer;
+    user-select: none;
+}
+.menu:hover{
+    transition: ease-out 0.2s;
+    background-color: #f0bca3;
+}
+
+.container{
+    display: flex;
+    height: 100%;
+}
+
+.left{
+    flex: 1 1 70%;
+    background-color: lightcoral;
+}
+
+.right{
+    flex: 1 1 30%;
+    background-color: lightseagreen;
+    display: flex;
+    flex-direction: column;
+}
+
+.top{
+    display: flex;
+    flex: 1 1 30%;
+    background-color: lightgreen;
+}
+
+.bottom{
+    display: flex;
+    flex: 1 1 70%;
+    background-color: lightgoldenrodyellow;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pfp{
+    background-color: antiquewhite;
+    height: 10vh;
+    margin: 1vh;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.infos p{
+    margin: 0;
+}
+
+
+
+.search{
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    margin: 5px;
+    transition: box-shadow 0.3s ease;
+}
+  
+.search:hover{
+    box-shadow: inset 0px 0px 12px -3px rgba(0,0,0,0.1);
+}
+
+.trends{
+    list-style: none;
+}
+.trends:hover{
+    color: tomato;
+}
+
+
+
+
+
+
+
+
+
+/* responsiveness */
+@media screen and (max-width: 480px){
+
+    .header{
+        flex-direction: column;
+    }
+
+    .headerLeft, .headerRight{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .menu{
+        margin: 5px;
+    }
+
+    .top, .bottom{
+        flex: 1 1 100%;
+    }
+}
